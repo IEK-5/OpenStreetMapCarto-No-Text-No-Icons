@@ -1,5 +1,15 @@
 # OpenStreetMap Carto
 
+## Fork by IEK-5
+
+This is a forked version of the OpenStreetMap CartoCss style. It worked off at 47a96cb6092198ba37992351a4059336ed58ae96. 
+The main goal of this fork is to use this stylesheet with nik4 to render training data for neural networks.
+
+### Changes
+
+- openstreetmap-carto.lua: added 'name' and 'ref' to the delete_tags list
+- project.mml: added 'status: off' to each layer that has 'geometry: point' or that has 'text' in its id value
+
 ![screenshot](https://raw.github.com/gravitystorm/openstreetmap-carto/master/preview.png)
 
 These are the CartoCSS map stylesheets for the Standard map layer on [OpenStreetMap.org](https://www.openstreetmap.org/).
