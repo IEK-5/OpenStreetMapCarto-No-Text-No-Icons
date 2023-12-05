@@ -132,7 +132,10 @@ local delete_tags = {
     'import',
     'import_uuid',
     'OBJTYPE',
-    'SK53_bulk:load'
+    'SK53_bulk:load',
+    -- do not render text
+    'name',
+    'ref'
 }
 delete_prefixes = {
     'note:',
