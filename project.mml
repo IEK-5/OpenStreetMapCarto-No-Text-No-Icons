@@ -398,6 +398,7 @@ Layer:
         ) AS water_barriers_points
     properties:
       minzoom: 17
+    status: off
   - id: bridge
     geometry: polygon
     <<: *extents
@@ -644,6 +645,7 @@ Layer:
         ) AS turning_circle_sql
     properties:
       minzoom: 15
+    status: off
   - id: highway-area-casing
     geometry: polygon
     <<: *extents
@@ -820,6 +822,7 @@ Layer:
       table: *turning-circle_sql
     properties:
       minzoom: 15
+    status: off
   - id: aerialways
     geometry: linestring
     <<: *extents
@@ -1054,6 +1057,7 @@ Layer:
         AS entrances
     properties:
       minzoom: 18
+    status: off
   - id: aeroways
     geometry: linestring
     <<: *extents
@@ -1271,6 +1275,7 @@ Layer:
         ) AS country_names
     properties:
       minzoom: 2
+    status: off
   - id: capital-names
     geometry: point
     <<: *extents
@@ -1293,6 +1298,7 @@ Layer:
     properties:
       minzoom: 3
       maxzoom: 15
+    status: off
   - id: state-names
     geometry: point
     <<: *extents
@@ -1317,6 +1323,7 @@ Layer:
         ) AS state_names
     properties:
       minzoom: 4
+    status: off
   - id: placenames-medium
     geometry: point
     <<: *extents
@@ -1362,6 +1369,7 @@ Layer:
       cache-features: true
       minzoom: 4
       maxzoom: 15
+    status: off
   - id: placenames-small
     geometry: point
     <<: *extents
@@ -1393,6 +1401,7 @@ Layer:
     properties:
       cache-features: true
       minzoom: 12
+    status: off
   - id: stations
     geometry: point
     <<: *extents
@@ -1444,6 +1453,7 @@ Layer:
     properties:
       cache-features: true
       minzoom: 12
+    status: off
   - id: junctions
     geometry: point
     <<: *extents
@@ -1476,6 +1486,7 @@ Layer:
         ) AS junctions
     properties:
       minzoom: 11
+    status: off
   - id: bridge-text
     geometry: point
     <<: *extents
@@ -1497,6 +1508,7 @@ Layer:
         ) AS bridge_text
     properties:
       minzoom: 11
+    status: off
   - id: county-names
     geometry: point
     <<: *extents
@@ -1522,6 +1534,7 @@ Layer:
         ) AS county_names
     properties:
       minzoom: 8
+    status: off
   - id: amenity-points
     geometry: point
     <<: *extents
@@ -1745,6 +1758,7 @@ Layer:
     properties:
       cache-features: true
       minzoom: 10
+    status: off
   - id: amenity-line
     geometry: linestring
     <<: *extents
@@ -1832,6 +1846,7 @@ Layer:
     properties:
       minzoom: 10
       maxzoom: 12
+    status: off
   - id: roads-text-ref
     geometry: linestring
     <<: *extents
@@ -1883,6 +1898,7 @@ Layer:
         ) AS roads_text_ref
     properties:
       minzoom: 13
+    status: off
   - id: roads-area-text-name
     geometry: point
     <<: *extents
@@ -1908,6 +1924,7 @@ Layer:
         ) AS roads_area_text_name
     properties:
       minzoom: 15
+    status: off
   - id: roads-text-name
     geometry: linestring
     <<: *extents
@@ -1941,6 +1958,7 @@ Layer:
     properties:
       cache-features: true
       minzoom: 13
+    status: off
   - id: paths-text-name
     geometry: linestring
     <<: *extents
@@ -1967,6 +1985,7 @@ Layer:
     properties:
       cache-features: true
       minzoom: 15
+    status: off
   - id: railways-text-name
     geometry: linestring
     <<: *extents
@@ -1998,6 +2017,7 @@ Layer:
         ) AS railways_text_name
     properties:
       minzoom: 11
+    status: off
   - id: roads-text-ref-minor
     geometry: linestring
     <<: *extents
@@ -2042,6 +2062,7 @@ Layer:
         ) AS roads_text_ref_minor
     properties:
       minzoom: 15
+    status: off
   - id: text-poly-low-zoom
     geometry: point
     <<: *extents
@@ -2081,6 +2102,7 @@ Layer:
     properties:
       minzoom: 4
       maxzoom: 9
+    status: off
   - id: text-line
     geometry: linestring
     <<: *extents
@@ -2112,6 +2134,7 @@ Layer:
         ) AS text_line
     properties:
       minzoom: 10
+    status: off
   - id: text-point
     geometry: point
     <<: *extents
@@ -2122,6 +2145,7 @@ Layer:
       table: *amenity_points_sql
     properties:
       minzoom: 10
+    status: off
   - id: building-text
     geometry: point
     <<: *extents
@@ -2142,6 +2166,7 @@ Layer:
         ) AS building_text
     properties:
       minzoom: 14
+    status: off
   - id: interpolation
     geometry: linestring
     <<: *extents
@@ -2188,6 +2213,7 @@ Layer:
         ) AS addresses
     properties:
       minzoom: 17
+    status: off
   - id: water-lines-text
     geometry: linestring
     <<: *extents
@@ -2216,6 +2242,7 @@ Layer:
         ) AS water_lines_text
     properties:
       minzoom: 13
+    status: off
   - id: ferry-routes-text
     geometry: linestring
     <<: *extents
@@ -2232,6 +2259,7 @@ Layer:
         ) AS ferry_routes_text
     properties:
       minzoom: 13
+    status: off
   - id: admin-text
     geometry: linestring
     <<: *extents
@@ -2253,6 +2281,7 @@ Layer:
         ) AS admin_text
     properties:
       minzoom: 11
+    status: off
   - id: protected-areas-text
     geometry: linestring
     <<: *extents
@@ -2273,6 +2302,7 @@ Layer:
         ) AS protected_areas_text
     properties:
       minzoom: 13
+    status: off
   - id: amenity-low-priority
     geometry: point
     <<: *extents
@@ -2341,6 +2371,7 @@ Layer:
     properties:
       cache-features: true
       minzoom: 14
+    status: off
   - id: text-low-priority
     geometry: point
     <<: *extents
@@ -2351,3 +2382,4 @@ Layer:
       table: *amenity_low_priority_sql
     properties:
       minzoom: 17
+    status: off
